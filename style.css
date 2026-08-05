@@ -512,209 +512,136 @@ Scroll Animation
 }
 
 }
-/* ===========================
-        SKILLS
-=========================== */
+/*==============================
+          SKILLS
+==============================*/
 
 .skills{
 
     padding:100px 8%;
+
 }
 
-.skills-container{
+.skills-subtitle{
 
-    display:grid;
-    grid-template-columns:1.2fr 1fr;
-    gap:50px;
+    text-align:center;
+
+    color:#cbd5e1;
+
+    font-size:18px;
+
+    max-width:750px;
+
+    margin:0 auto 60px;
+
+    line-height:1.8;
+
 }
 
-/* Left Side */
-
-.skills-box{
-
-    background:rgba(255,255,255,.08);
-
-    backdrop-filter:blur(20px);
-
-    padding:35px;
-
-    border-radius:20px;
-
-    border:1px solid rgba(255,255,255,.1);
-}
-
-.skills-box h3{
-
-    margin-bottom:30px;
-
-    color:#38bdf8;
-}
-
-.skill{
-
-    margin-bottom:30px;
-}
-
-.skill span{
-
-    display:block;
-
-    margin-bottom:10px;
-
-    font-weight:600;
-}
-
-.progress{
-
-    width:100%;
-
-    height:14px;
-
-    background:#334155;
-
-    border-radius:20px;
-
-    overflow:hidden;
-}
-
-.progress-bar{
-
-    height:100%;
-
-    display:flex;
-
-    justify-content:flex-end;
-
-    align-items:center;
-
-    padding-right:10px;
-
-    color:white;
-
-    font-size:12px;
-
-    border-radius:20px;
-
-    animation:grow 2s ease;
-}
-
-.python{
-
-    width:95%;
-
-    background:linear-gradient(90deg,#3776ab,#ffd43b);
-}
-
-.cpp{
-
-    width:85%;
-
-    background:linear-gradient(90deg,#00599C,#3b82f6);
-}
-
-.sql{
-
-    width:88%;
-
-    background:linear-gradient(90deg,#2563eb,#60a5fa);
-}
-
-.js{
-
-    width:82%;
-
-    background:linear-gradient(90deg,#f7df1e,#f59e0b);
-}
-
-@keyframes grow{
-
-    from{
-        width:0;
-    }
-}
-
-/* Right Side */
-
-.tech-box{
+.skills-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
 
-    gap:20px;
+    gap:25px;
+
 }
 
-.tech-card{
+.skill-card{
 
     background:rgba(255,255,255,.08);
 
-    border-radius:18px;
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:20px;
 
     padding:35px 20px;
 
     text-align:center;
 
-    backdrop-filter:blur(15px);
+    transition:.35s;
 
-    transition:.4s;
-
-    border:1px solid rgba(255,255,255,.1);
 }
 
-.tech-card:hover{
+.skill-card:hover{
 
     transform:translateY(-10px);
 
-    background:#38bdf8;
+    border-color:#38bdf8;
+
+    box-shadow:0 15px 35px rgba(56,189,248,.25);
+
 }
 
-.tech-card i{
+.skill-card i{
 
-    font-size:45px;
+    font-size:60px;
 
-    margin-bottom:20px;
+    margin-bottom:18px;
 
-    color:white;
+    transition:.35s;
+
 }
 
-.tech-card h4{
+.skill-card:hover i{
+
+    transform:scale(1.15);
+
+}
+
+.skill-card span{
+
+    display:block;
+
+    margin-top:12px;
 
     font-size:18px;
+
+    font-weight:600;
+
 }
 
-/* ===========================
-        Responsive Skills
-=========================== */
+/* Light Mode */
 
-@media(max-width:900px){
+body.light-mode .skill-card{
 
-.skills-container{
+    background:white;
 
-    grid-template-columns:1fr;
+    border:1px solid #d1d5db;
+
 }
 
-.tech-box{
+body.light-mode .skill-card span{
+
+    color:#0f172a;
+
+}
+
+body.light-mode .skills-subtitle{
+
+    color:#475569;
+
+}
+
+@media(max-width:768px){
+
+.skills-grid{
 
     grid-template-columns:repeat(2,1fr);
-}
 
 }
 
-@media(max-width:600px){
+}
 
-.tech-box{
+@media(max-width:500px){
+
+.skills-grid{
 
     grid-template-columns:1fr;
-}
 
-.skills-box{
-
-    padding:25px;
-}
-
-.section-title{
-
-    font-size:36px;
 }
 
 }
@@ -1406,5 +1333,140 @@ footer p{
     grid-template-columns:1fr;
 
 }
+
+}
+/*==============================
+      DARK/LIGHT MODE
+==============================*/
+
+.theme-toggle{
+
+    width:50px;
+    height:50px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.1);
+
+    backdrop-filter:blur(10px);
+
+    color:white;
+
+    font-size:22px;
+
+    transition:.4s;
+
+}
+
+.theme-toggle:hover{
+
+    background:#38bdf8;
+
+    transform:rotate(180deg);
+
+}
+
+/*============= LIGHT MODE =============*/
+
+body.light-mode{
+
+    background:#f8fafc;
+
+    color:#0f172a;
+
+}
+
+body.light-mode .navbar{
+
+    background:rgba(255,255,255,.8);
+
+}
+
+body.light-mode .hero-left h1,
+body.light-mode .hero-left h2,
+body.light-mode .about-content h3,
+body.light-mode .section-title,
+body.light-mode .timeline-content h3,
+body.light-mode .achievement-card h3,
+body.light-mode .contact-info h3{
+    color:#0f172a;
+}
+
+body.light-mode .hero-left p,
+body.light-mode .about-content p,
+body.light-mode .timeline-content p,
+body.light-mode .achievement-card p,
+body.light-mode .contact-info p{
+    color:#475569;
+}
+
+body.light-mode .project-card,
+body.light-mode .info-card,
+body.light-mode .skills-box,
+body.light-mode .tech-card,
+body.light-mode .timeline-content,
+body.light-mode .achievement-card,
+body.light-mode .contact-box,
+body.light-mode .contact-form input,
+body.light-mode .contact-form textarea{
+
+    background:white;
+
+    color:#0f172a;
+
+    border:1px solid #d1d5db;
+
+}
+
+body.light-mode .nav-links a{
+
+    color:#0f172a;
+
+}
+
+body.light-mode footer{
+
+    background:#e2e8f0;
+
+}
+
+body.light-mode .contact-form input,
+body.light-mode .contact-form textarea{
+
+    color:#0f172a;
+
+}
+body.light-mode .project-card{
+
+    background:#1e293b;
+
+    color:white;
+
+}
+
+body.light-mode .project-card h3{
+
+    color:#38bdf8;
+
+}
+
+body.light-mode .project-card p{
+
+    color:#cbd5e1;
+
+}
+
+body.light-mode .tech-stack span{
+
+    background:#334155;
+
+    color:#38bdf8;
 
 }
