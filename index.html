@@ -9,8 +9,9 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.16.0/devicon.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
@@ -57,215 +58,222 @@
 
     </header>
 
-    <!-- ================= HERO ================= -->
+   <!-- ================= HERO ================= -->
 
-    <section id="home" class="hero">
+<section id="home" class="hero">
 
-        <div class="hero-left">
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
 
-            <h3>Hello, I'm</h3>
+    <div class="hero-left" data-aos="fade-right">
 
-            <h1>Devaraja Katti</h1>
+        <h3>Hello, I'm</h3>
 
-            <h2>
-                <span id="typing"></span>
-            </h2>
+        <h1>Devaraja Katti</h1>
 
-            <p>
-                Artificial Intelligence & Machine Learning undergraduate passionate
-                about building AI solutions, MERN applications, and Data Analytics
-                projects.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="assets/resume.pdf" class="btn">
-                    Download Resume
-                </a>
-
-                <a href="#projects" class="btn-outline">
-                    View Projects
-                </a>
-
-            </div>
-
-            <div class="social-icons">
-
-                <a href="https://github.com/DevKatti7560" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/devaraja-katti-58136a2a1/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="mailto:devarajakattigumagera@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="hero-right">
-
-            <img src="assets/profile.jpg" alt="Profile Photo">
-
-        </div>
-
-    </section>
-
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about" class="about">
-
-        <h2 class="section-title">
-            About <span>Me</span>
+        <h2>
+            <span id="typing"></span>
         </h2>
 
-        <div class="about-container">
+        <p>
+            Artificial Intelligence & Machine Learning undergraduate passionate
+            about building AI solutions, MERN applications, and Data Analytics
+            projects.
+        </p>
 
-            <!-- Left Card -->
+        <div class="hero-buttons">
 
-            <div class="about-image">
+            <a href="assets/resume.pdf" class="btn">
+                Download Resume
+            </a>
 
-                <img src="assets/profile.jpg" alt="Profile">
+            <a href="#projects" class="btn-outline">
+                View Projects
+            </a>
 
-            </div>
+        </div>
 
-            <!-- Right Content -->
+        <div class="social-icons">
 
-            <div class="about-content">
+            <a href="https://github.com/DevKatti7560" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
 
-                <h3>AI & Machine Learning Student</h3>
+            <a href="https://www.linkedin.com/in/devaraja-katti-58136a2a1/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
 
-                <p>
-                    I'm <strong>Devaraja Katti</strong>, an Artificial Intelligence &
-                    Machine Learning undergraduate at
-                    <strong>Dayananda Sagar College of Engineering</strong>
-                    with a CGPA of <strong>9.16</strong>.
+            <a href="mailto:devarajakattigumagera@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
 
-                    I enjoy building intelligent applications using Machine Learning,
-                    Deep Learning, Computer Vision, and Full Stack MERN technologies.
-                    My goal is to solve real-world problems through innovative AI
-                    solutions while continuously learning and improving my skills.
-                </p>
+        </div>
 
-                <div class="about-info">
+    </div>
 
-                    <div class="info-card">
-                        <h4>🎓 Degree</h4>
-                        <p>B.E. Artificial Intelligence & Machine Learning</p>
-                    </div>
+    <div class="hero-right" data-aos="fade-left">
 
-                    <div class="info-card">
-                        <h4>🏫 College</h4>
-                        <p>Dayananda Sagar College of Engineering</p>
-                    </div>
+        <img src="assets/profile.jpg" alt="Profile Photo">
 
-                    <div class="info-card">
-                        <h4>📊 CGPA</h4>
-                        <p>9.08 / 10</p>
-                    </div>
+    </div>
 
-                    <div class="info-card">
-                        <h4>📍 Location</h4>
-                        <p>Bengaluru, Karnataka</p>
-                    </div>
+</section>
+    <!-- ================= ABOUT ================= -->
 
+<section id="about" class="about">
+
+    <h2 class="section-title" data-aos="fade-up">
+        About <span>Me</span>
+    </h2>
+
+    <div class="about-container">
+
+        <!-- Left Card -->
+
+        <div class="about-image"
+             data-aos="zoom-in"
+             data-aos-duration="1000">
+
+            <img src="assets/profile.jpg" alt="Profile">
+
+        </div>
+
+        <!-- Right Content -->
+
+        <div class="about-content"
+             data-aos="fade-left"
+             data-aos-duration="1000"
+             data-aos-delay="200">
+
+            <h3>AI & Machine Learning Student</h3>
+
+            <p>
+                I'm <strong>Devaraja Katti</strong>, an Artificial Intelligence &
+                Machine Learning undergraduate at
+                <strong>Dayananda Sagar College of Engineering</strong>
+                with a CGPA of <strong>9.16</strong>.
+
+                I enjoy building intelligent applications using Machine Learning,
+                Deep Learning, Computer Vision, and Full Stack MERN technologies.
+                My goal is to solve real-world problems through innovative AI
+                solutions while continuously learning and improving my skills.
+            </p>
+
+            <div class="about-info">
+
+                <div class="info-card" data-aos="flip-up" data-aos-delay="100">
+                    <h4>🎓 Degree</h4>
+                    <p>B.E. Artificial Intelligence & Machine Learning</p>
+                </div>
+
+                <div class="info-card" data-aos="flip-up" data-aos-delay="200">
+                    <h4>🏫 College</h4>
+                    <p>Dayananda Sagar College of Engineering</p>
+                </div>
+
+                <div class="info-card" data-aos="flip-up" data-aos-delay="300">
+                    <h4>📊 CGPA</h4>
+                    <p>9.08 / 10</p>
+                </div>
+
+                <div class="info-card" data-aos="flip-up" data-aos-delay="400">
+                    <h4>📍 Location</h4>
+                    <p>Bengaluru, Karnataka</p>
                 </div>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
     <!-- ================= SKILLS ================= -->
 
-<section id="skills" class="skills">
+<section id="skills" class="skills" data-aos="fade-up">
 
-    <h2 class="section-title">
+    <h2 class="section-title" data-aos="fade-up">
         My <span>Skills</span>
     </h2>
 
-    <p class="skills-subtitle">
+    <p class="skills-subtitle" data-aos="fade-up" data-aos-delay="100">
         Technologies and tools I use to build AI, Machine Learning,
         Full Stack and Data Analytics applications.
     </p>
 
     <div class="skills-grid">
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
             <i class="devicon-python-plain colored"></i>
             <span>Python</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
             <i class="devicon-cplusplus-plain colored"></i>
             <span>C++</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
             <i class="devicon-javascript-plain colored"></i>
             <span>JavaScript</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
             <i class="devicon-react-original colored"></i>
             <span>React</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
             <i class="devicon-nodejs-plain colored"></i>
             <span>Node.js</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
             <i class="devicon-express-original colored"></i>
             <span>Express.js</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
             <i class="devicon-mongodb-plain colored"></i>
             <span>MongoDB</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">
             <i class="devicon-mysql-original colored"></i>
             <span>MySQL</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
             <i class="devicon-tensorflow-original colored"></i>
             <span>TensorFlow</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="550">
             <i class="devicon-scikitlearn-plain colored"></i>
             <span>Scikit-Learn</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
             <i class="devicon-opencv-plain colored"></i>
             <span>OpenCV</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="650">
             <i class="devicon-git-plain colored"></i>
             <span>Git</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="700">
             <i class="devicon-github-original"></i>
             <span>GitHub</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="750">
             <i class="fas fa-chart-line" style="color:#F2C811;"></i>
             <span>Power BI</span>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="800">
             <i class="devicon-vscode-plain colored"></i>
             <span>VS Code</span>
         </div>
@@ -275,9 +283,9 @@
 </section>
 <!-- ================= PROJECTS ================= -->
 
-<section id="projects" class="projects">
+<section id="projects" class="projects" data-aos="fade-up">
 
-    <h2 class="section-title">
+    <h2 class="section-title" data-aos="fade-up">
         Featured <span>Projects</span>
     </h2>
 
@@ -285,7 +293,10 @@
 
         <!-- ================= Project 1 ================= -->
 
-        <div class="project-card">
+        <div class="project-card"
+             data-aos="zoom-in-up"
+             data-aos-delay="100"
+             data-aos-duration="1000">
 
             <div class="project-icon">💼</div>
 
@@ -325,7 +336,10 @@
 
         <!-- ================= Project 2 ================= -->
 
-        <div class="project-card">
+        <div class="project-card"
+             data-aos="zoom-in-up"
+             data-aos-delay="200"
+             data-aos-duration="1000">
 
             <div class="project-icon">📰</div>
 
@@ -361,7 +375,10 @@
 
         <!-- ================= Project 3 ================= -->
 
-        <div class="project-card">
+        <div class="project-card"
+             data-aos="zoom-in-up"
+             data-aos-delay="300"
+             data-aos-duration="1000">
 
             <div class="project-icon">🚶</div>
 
@@ -397,7 +414,10 @@
 
         <!-- ================= Project 4 ================= -->
 
-        <div class="project-card">
+        <div class="project-card"
+             data-aos="zoom-in-up"
+             data-aos-delay="400"
+             data-aos-duration="1000">
 
             <div class="project-icon">💡</div>
 
@@ -430,89 +450,94 @@
             </div>
 
         </div>
+
         <!-- ================= Project 5 ================= -->
 
-<div class="project-card">
+        <div class="project-card"
+             data-aos="zoom-in-up"
+             data-aos-delay="500"
+             data-aos-duration="1000">
 
-    <div class="project-icon">👤</div>
+            <div class="project-icon">👤</div>
 
-    <h3>Face Recognition Attendance System</h3>
+            <h3>Face Recognition Attendance System</h3>
 
-    <p>
-        An AI-powered attendance management system that automatically recognizes
-        students' faces using Computer Vision and marks attendance in real time,
-        reducing manual effort and improving accuracy.
-    </p>
+            <p>
+                An AI-powered attendance management system that automatically
+                recognizes students' faces using Computer Vision and marks
+                attendance in real time, reducing manual effort and improving
+                accuracy.
+            </p>
 
-    <div class="tech-stack">
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>Face Recognition</span>
+                <span>Computer Vision</span>
+            </div>
 
-        <span>Python</span>
-        <span>OpenCV</span>
-        <span>Face Recognition</span>
-        <span>Computer Vision</span>
+            <div class="project-buttons">
 
-    </div>
+                <a href="https://github.com/DevKatti7560/face-recognition-attendace-system"
+                   target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
 
-    <div class="project-buttons">
+                <a href="#">
+                    <i class="fas fa-eye"></i> Details
+                </a>
 
-        <a href="https://github.com/DevKatti7560/face-recognition-attendace-system"
-           target="_blank">
-            <i class="fab fa-github"></i> GitHub
-        </a>
+            </div>
 
-        <a href="#">
-            <i class="fas fa-eye"></i> Details
-        </a>
+        </div>
 
-    </div>
+        <!-- ================= Project 6 ================= -->
 
-</div>
-<!-- ================= Project 6 ================= -->
+        <div class="project-card"
+             data-aos="zoom-in-up"
+             data-aos-delay="600"
+             data-aos-duration="1000">
 
-<div class="project-card">
+            <div class="project-icon">🤖</div>
 
-    <div class="project-icon">🤖</div>
+            <h3>AI Email Reply Assistant</h3>
 
-    <h3>AI Email Reply Assistant</h3>
+            <p>
+                An AI-powered application that generates professional and
+                context-aware email replies using Natural Language Processing,
+                helping users draft accurate responses quickly and efficiently.
+            </p>
 
-    <p>
-        An AI-powered application that generates professional and context-aware
-        email replies using Natural Language Processing, helping users draft
-        accurate responses quickly and efficiently.
-    </p>
+            <div class="tech-stack">
+                <span>Spring Boot</span>
+                <span>React</span>
+                <span>Gemini API</span>
+                <span>REST API</span>
+            </div>
 
-    <div class="tech-stack">
+            <div class="project-buttons">
 
-        <span>Spring Boot</span>
-        <span>React</span>
-        <span>Gemini API</span>
-        <span>REST API</span>
+                <a href="https://github.com/DevKatti7560/AI-Email-Reply-Assistant"
+                   target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
 
-    </div>
+                <a href="#">
+                    <i class="fas fa-eye"></i> Details
+                </a>
 
-    <div class="project-buttons">
+            </div>
 
-        <a href="https://github.com/DevKatti7560/AI-Email-Reply-Assistant"
-           target="_blank">
-            <i class="fab fa-github"></i> GitHub
-        </a>
-
-        <a href="#">
-            <i class="fas fa-eye"></i> Details
-        </a>
-
-    </div>
-
-</div>
+        </div>
 
     </div>
 
 </section>
 <!-- ================= EDUCATION ================= -->
 
-<section id="education" class="education">
+<section id="education" class="education" data-aos="fade-up">
 
-    <h2 class="section-title">
+    <h2 class="section-title" data-aos="fade-up">
         Education & <span>Achievements</span>
     </h2>
 
@@ -520,7 +545,10 @@
 
         <!-- College -->
 
-        <div class="timeline-item">
+        <div class="timeline-item"
+             data-aos="fade-up"
+             data-aos-delay="100"
+             data-aos-duration="1000">
 
             <div class="timeline-dot"></div>
 
@@ -543,7 +571,10 @@
 
         <!-- PU -->
 
-        <div class="timeline-item">
+        <div class="timeline-item"
+             data-aos="fade-up"
+             data-aos-delay="300"
+             data-aos-duration="1000">
 
             <div class="timeline-dot"></div>
 
@@ -570,15 +601,18 @@
 
 <!-- ================= ACHIEVEMENTS ================= -->
 
-<section class="achievements">
+<section class="achievements" data-aos="fade-up">
 
-    <h2 class="section-title">
+    <h2 class="section-title" data-aos="fade-up">
         My <span>Achievements</span>
     </h2>
 
     <div class="achievement-grid">
 
-        <div class="achievement-card">
+        <div class="achievement-card"
+             data-aos="flip-left"
+             data-aos-delay="100"
+             data-aos-duration="1000">
 
             <h1>🏆</h1>
 
@@ -593,7 +627,10 @@
 
         </div>
 
-        <div class="achievement-card">
+        <div class="achievement-card"
+             data-aos="flip-left"
+             data-aos-delay="250"
+             data-aos-duration="1000">
 
             <h1>📜</h1>
 
@@ -615,7 +652,10 @@
 
         </div>
 
-        <div class="achievement-card">
+        <div class="achievement-card"
+             data-aos="flip-left"
+             data-aos-delay="400"
+             data-aos-duration="1000">
 
             <h1>🚀</h1>
 
@@ -635,9 +675,9 @@
 </section>
 <!-- ================= CONTACT ================= -->
 
-<section id="contact" class="contact">
+<section id="contact" class="contact" data-aos="fade-up">
 
-    <h2 class="section-title">
+    <h2 class="section-title" data-aos="fade-up">
         Get In <span>Touch</span>
     </h2>
 
@@ -645,7 +685,9 @@
 
         <!-- Contact Information -->
 
-        <div class="contact-info">
+        <div class="contact-info"
+             data-aos="fade-right"
+             data-aos-duration="1000">
 
             <h3>Let's Connect 🚀</h3>
 
@@ -654,54 +696,42 @@
                 Full Stack Development, internships, and exciting projects.
             </p>
 
-            <div class="contact-box">
-
+            <div class="contact-box" data-aos="fade-right" data-aos-delay="100">
                 <i class="fas fa-envelope"></i>
 
                 <div>
                     <h4>Email</h4>
-                    <p>
-                        devarajakattigumagera@gmail.com
-                    </p>
+                    <p>devarajakattigumagera@gmail.com</p>
                 </div>
-
             </div>
 
-            <div class="contact-box">
-
+            <div class="contact-box" data-aos="fade-right" data-aos-delay="200">
                 <i class="fas fa-phone"></i>
 
                 <div>
                     <h4>Phone</h4>
-                    <p>
-                        +91 7338341036
-                    </p>
+                    <p>+91 7338341036</p>
                 </div>
-
             </div>
 
-            <div class="contact-box">
-
+            <div class="contact-box" data-aos="fade-right" data-aos-delay="300">
                 <i class="fas fa-location-dot"></i>
 
                 <div>
                     <h4>Location</h4>
-                    <p>
-                        Bengaluru, Karnataka
-                    </p>
+                    <p>Bengaluru, Karnataka</p>
                 </div>
-
             </div>
 
-            <div class="contact-social">
+            <div class="contact-social"
+                 data-aos="zoom-in"
+                 data-aos-delay="400">
 
-                <a href="https://github.com/DevKatti7560"
-                    target="_blank">
+                <a href="https://github.com/DevKatti7560" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
 
-                <a href="https://www.linkedin.com/in/devaraja-katti-58136a2a1/"
-                    target="_blank">
+                <a href="https://www.linkedin.com/in/devaraja-katti-58136a2a1/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
 
@@ -715,7 +745,10 @@
 
         <!-- Contact Form -->
 
-        <form class="contact-form">
+        <form class="contact-form"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="200">
 
             <input
                 type="text"
@@ -768,9 +801,23 @@
     </p>
 
 </footer>
-    <!-- JS -->
-    <script src="script.js"></script>
+
+<!-- Back to Top Button -->
+<button id="topBtn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Vanilla Tilt -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+<!-- Particles -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<!-- Your Script (Always Last) -->
+<script src="script.js"></script>
 
 </body>
-
 </html>

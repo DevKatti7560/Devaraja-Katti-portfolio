@@ -121,3 +121,68 @@ document.querySelectorAll("section").forEach(section => {
     observer.observe(section);
 
 });
+if (typeof AOS !== "undefined") {
+    AOS.init({
+        duration:1000,
+        once:true,
+        easing:"ease-in-out"
+    });
+}
+
+if (typeof VanillaTilt !== "undefined") {
+    VanillaTilt.init(
+        document.querySelectorAll(".project-card,.skill-card,.achievement-card"),
+        {
+            max:10,
+            speed:400,
+            glare:true,
+            "max-glare":0.2
+        }
+    );
+}
+
+if (
+    typeof particlesJS !== "undefined" &&
+    document.getElementById("particles-js")
+) {
+    particlesJS("particles-js",{
+        particles:{
+            number:{value:55},
+            color:{value:"#38bdf8"},
+            shape:{type:"circle"},
+            opacity:{value:0.5},
+            size:{value:3},
+            move:{
+                enable:true,
+                speed:2
+            }
+        }
+    });
+}
+const topBtn=document.getElementById("topBtn");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>400){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+topBtn.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
