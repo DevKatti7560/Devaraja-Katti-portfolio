@@ -186,3 +186,55 @@ behavior:"smooth"
 });
 
 };
+/* ===========================
+      EMAILJS CONTACT FORM
+=========================== */
+
+// Initialize EmailJS
+emailjs.init("lN23A6dJFzh5WeSRE");
+
+// Contact Form
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function(e) {
+
+        e.preventDefault();
+
+        const button = contactForm.querySelector("button");
+
+        button.innerHTML = "Sending...";
+        button.disabled = true;
+
+        emailjs.sendForm(
+            "service_zpbkbal",
+            "template_r2gol6t",
+            this
+        )
+
+        .then(function() {
+
+            alert("✅ Message sent successfully!");
+
+            contactForm.reset();
+
+            button.innerHTML = "Send Message";
+            button.disabled = false;
+
+        })
+
+        .catch(function(error) {
+
+            console.error(error);
+
+            alert("❌ Failed to send message. Please try again.");
+
+            button.innerHTML = "Send Message";
+            button.disabled = false;
+
+        });
+
+    });
+
+}

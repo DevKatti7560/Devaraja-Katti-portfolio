@@ -754,36 +754,45 @@
 
         <!-- Contact Form -->
 
-        <form class="contact-form"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="200">
+        <form id="contact-form"
+      class="contact-form"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+      data-aos-delay="200">
 
-            <input
-                type="text"
-                placeholder="Your Name"
-                required>
+    <input
+        type="text"
+        id="name"
+        name="from_name"
+        placeholder="Your Name"
+        required>
 
-            <input
-                type="email"
-                placeholder="Your Email"
-                required>
+    <input
+        type="email"
+        id="email"
+        name="from_email"
+        placeholder="Your Email"
+        required>
 
-            <input
-                type="text"
-                placeholder="Subject"
-                required>
+    <input
+        type="text"
+        id="subject"
+        name="subject"
+        placeholder="Subject"
+        required>
 
-            <textarea
-                rows="6"
-                placeholder="Write your message..."
-                required></textarea>
+    <textarea
+        id="message"
+        name="message"
+        rows="6"
+        placeholder="Write your message..."
+        required></textarea>
 
-            <button type="submit">
-                Send Message
-            </button>
+    <button type="submit">
+        Send Message
+    </button>
 
-        </form>
+</form>
 
     </div>
 
@@ -826,6 +835,8 @@
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
 <!-- Your Script (Always Last) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script src="script.js"></script>
 
 </body>
