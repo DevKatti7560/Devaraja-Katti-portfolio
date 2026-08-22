@@ -11,7 +11,7 @@
 
 body{
     font-family:'Poppins',sans-serif;
-    background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+    background:linear-gradient(135deg,#020b07,#07130d,#020b07);
     color:white;
     overflow-x:hidden;
 }
@@ -35,7 +35,7 @@ header{
     padding:18px 8%;
 
     backdrop-filter:blur(18px);
-    background:rgba(255,255,255,0.08);
+    background:rgba(2,11,7,.75);
 
     border-bottom:1px solid rgba(255,255,255,.1);
 }
@@ -43,7 +43,7 @@ header{
 .logo{
     font-size:30px;
     font-weight:700;
-    color:#38bdf8;
+    color:#f8fafc;
 }
 
 .logo span{
@@ -64,7 +64,7 @@ header{
 }
 
 .nav-links a:hover{
-    color:#38bdf8;
+    color:#22c55e;
 }
 
 /* ===========================
@@ -101,7 +101,7 @@ header{
 
 .hero-left h2{
 
-    color:#38bdf8;
+    color:#22c55e;
 
     font-size:34px;
 
@@ -140,7 +140,7 @@ Buttons
 
     border-radius:40px;
 
-    background:#38bdf8;
+    background:#22c55e;
 
     color:white;
 
@@ -153,7 +153,7 @@ Buttons
 
     transform:translateY(-5px);
 
-    box-shadow:0 10px 30px rgba(56,189,248,.4);
+    box-shadow:0 10px 30px rgba(34,197,94,.35);
 }
 
 .btn-outline{
@@ -164,16 +164,16 @@ Buttons
 
     border-radius:40px;
 
-    border:2px solid #38bdf8;
+    border:2px solid #22c55e;
 
-    color:#38bdf8;
+    color:#22c55e;
 
     transition:.4s;
 }
 
 .btn-outline:hover{
 
-    background:#38bdf8;
+    background:#22c55e;
 
     color:white;
 }
@@ -218,7 +218,7 @@ Social Icons
 
 .social-icons a:hover{
 
-    background:#38bdf8;
+    background:#22c55e;
 
     transform:translateY(-8px);
 }
@@ -246,9 +246,9 @@ Right Side Image
 
     border-radius:50%;
 
-    border:6px solid #38bdf8;
+    border:6px solid #22c55e;
 
-    box-shadow:0 0 40px rgba(56,189,248,.4);
+    box-shadow:0 0 40px rgba(34,197,94,.35);
 
     transition:.5s;
 }
@@ -318,7 +318,7 @@ Typing Cursor
 
     content:"|";
 
-    color:#38bdf8;
+    color:#22c55e;
 
     animation:blink .7s infinite;
 }
@@ -336,7 +336,7 @@ Active Navbar
 
 .nav-links a.active{
 
-    color:#38bdf8;
+    color:#22c55e;
 }
 
 /* ===========================
@@ -379,7 +379,7 @@ Scroll Animation
 
 .section-title span{
 
-    color:#38bdf8;
+    color:#22c55e;
 }
 
 .about-container{
@@ -406,9 +406,9 @@ Scroll Animation
 
     border-radius:25px;
 
-    border:5px solid #38bdf8;
+    border:5px solid #22c55e;
 
-    box-shadow:0 0 35px rgba(56,189,248,.4);
+    box-shadow:0 0 35px rgba(34,197,94,.35);
 
     transition:.4s;
 }
@@ -429,7 +429,7 @@ Scroll Animation
 
     margin-bottom:20px;
 
-    color:#38bdf8;
+    color:#22c55e;
 }
 
 .about-content p{
@@ -471,7 +471,7 @@ Scroll Animation
 
     transform:translateY(-10px);
 
-    background:#38bdf8;
+    background:#22c55e;
 }
 
 .info-card h4{
@@ -570,9 +570,9 @@ Scroll Animation
 
     transform:translateY(-10px);
 
-    border-color:#38bdf8;
+    border-color:#22c55e;
 
-    box-shadow:0 15px 35px rgba(56,189,248,.25);
+    box-shadow:0 15px 35px rgba(34,197,94,.20);
 
 }
 
@@ -651,7 +651,7 @@ body.light-mode .skills-subtitle{
 
 .projects{
     padding:100px 8%;
-    background:linear-gradient(180deg,#0f172a,#111827);
+    background:linear-gradient(180deg,#020b07,#07130d);
 }
 
 .projects-grid{
@@ -699,9 +699,9 @@ body.light-mode .skills-subtitle{
 
     background:linear-gradient(
         135deg,
-        #38bdf8,
-        #6366f1,
-        #22c55e
+        #16a34a,
+        #22c55e,
+        #4ade80
     );
 
     -webkit-mask:
@@ -739,7 +739,7 @@ body.light-mode .skills-subtitle{
 
     border-radius:20px;
 
-    background:linear-gradient(135deg,#38bdf8,#2563eb);
+    background:linear-gradient(135deg,#166534,#22c55e);
 
     display:flex;
 
@@ -750,7 +750,7 @@ body.light-mode .skills-subtitle{
 
     margin-bottom:25px;
 
-    box-shadow:0 8px 20px rgba(56,189,248,.4);
+    box-shadow:0 8px 20px rgba(34,197,94,.35);
 
 }
 
@@ -802,7 +802,7 @@ body.light-mode .skills-subtitle{
 
     border:1px solid #334155;
 
-    color:#38bdf8;
+    color:#22c55e;
 
     font-size:13px;
 
@@ -812,7 +812,7 @@ body.light-mode .skills-subtitle{
 
 .tech-stack span:hover{
 
-    background:#38bdf8;
+    background:#22c55e;
 
     color:white;
 
@@ -857,7 +857,7 @@ body.light-mode .skills-subtitle{
 
 .project-buttons a:first-child{
 
-    background:#38bdf8;
+    background:#22c55e;
 
     color:white;
 
@@ -867,9 +867,9 @@ body.light-mode .skills-subtitle{
 
     background:transparent;
 
-    border:2px solid #38bdf8;
+    border:2px solid #22c55e;
 
-    color:#38bdf8;
+    color:#22c55e;
 
 }
 
@@ -881,13 +881,13 @@ body.light-mode .skills-subtitle{
 
 .project-buttons a:first-child:hover{
 
-    background:#0ea5e9;
+    background:#16a34a;
 
 }
 
 .project-buttons a:last-child:hover{
 
-    background:#38bdf8;
+    background:#22c55e;
 
     color:white;
 
@@ -928,7 +928,7 @@ body.light-mode .skills-subtitle{
 
     margin-top:60px;
 
-    border-left:3px solid #38bdf8;
+    border-left:3px solid #22c55e;
 
     padding-left:40px;
 
@@ -956,9 +956,9 @@ body.light-mode .skills-subtitle{
 
     border-radius:50%;
 
-    background:#38bdf8;
+    background:#22c55e;
 
-    box-shadow:0 0 20px #38bdf8;
+    box-shadow:0 0 20px #22c55e;
 
 }
 
@@ -986,7 +986,7 @@ body.light-mode .skills-subtitle{
 
 .timeline-content h3{
 
-    color:#38bdf8;
+    color:#22c55e;
 
     margin-bottom:8px;
 
@@ -1050,7 +1050,7 @@ body.light-mode .skills-subtitle{
 
     transform:translateY(-15px);
 
-    box-shadow:0 15px 35px rgba(56,189,248,.3);
+    box-shadow:0 15px 35px rgba(34,197,94,.25);
 
 }
 
@@ -1064,7 +1064,7 @@ body.light-mode .skills-subtitle{
 
 .achievement-card h3{
 
-    color:#38bdf8;
+    color:#22c55e;
 
     margin-bottom:15px;
 
@@ -1119,7 +1119,7 @@ body.light-mode .skills-subtitle{
 
     font-size:35px;
 
-    color:#38bdf8;
+    color:#22c55e;
 
     margin-bottom:20px;
 
@@ -1173,7 +1173,7 @@ body.light-mode .skills-subtitle{
 
     border-radius:50%;
 
-    background:#38bdf8;
+    background:#22c55e;
 
     font-size:22px;
 
@@ -1215,7 +1215,7 @@ body.light-mode .skills-subtitle{
 
 .contact-social a:hover{
 
-    background:#38bdf8;
+    background:#22c55e;
 
     transform:translateY(-8px);
 
@@ -1260,7 +1260,7 @@ body.light-mode .skills-subtitle{
 
 .contact-form button{
 
-    background:#38bdf8;
+    background:#22c55e;
 
     border:none;
 
@@ -1280,7 +1280,7 @@ body.light-mode .skills-subtitle{
 
 .contact-form button:hover{
 
-    background:#0ea5e9;
+    background:#16a34a;
 
     transform:translateY(-5px);
 
@@ -1304,7 +1304,7 @@ footer{
 
 footer h3{
 
-    color:#38bdf8;
+    color:#22c55e;
 
     margin-bottom:15px;
 
@@ -1367,7 +1367,7 @@ footer p{
 
 .theme-toggle:hover{
 
-    background:#38bdf8;
+    background:#22c55e;
 
     transform:rotate(180deg);
 
@@ -1453,7 +1453,7 @@ body.light-mode .project-card{
 
 body.light-mode .project-card h3{
 
-    color:#38bdf8;
+    color:#22c55e;
 
 }
 
@@ -1467,7 +1467,7 @@ body.light-mode .tech-stack span{
 
     background:#334155;
 
-    color:#38bdf8;
+    color:#22c55e;
 
 }
 .hero{
@@ -1518,7 +1518,7 @@ border:none;
 
 border-radius:50%;
 
-background:#38bdf8;
+background:#22c55e;
 
 color:white;
 
@@ -1532,7 +1532,7 @@ z-index:999;
 
 transition:.3s;
 
-box-shadow:0 8px 20px rgba(56,189,248,.4);
+box-shadow:0 8px 20px rgba(34,197,94,.35);
 
 }
 
@@ -1540,6 +1540,68 @@ box-shadow:0 8px 20px rgba(56,189,248,.4);
 
 transform:translateY(-6px);
 
-background:#0ea5e9;
+background:#16a34a;
 
 }
+
+/* ===========================
+   GREEN + BLACK PREMIUM THEME
+   =========================== */
+
+.navbar{
+    background:rgba(2,11,7,.75);
+    border-bottom:1px solid rgba(34,197,94,.15);
+}
+
+.logo{color:#f8fafc;}
+.logo span{color:#22c55e;}
+
+.project-card::before{
+    background:linear-gradient(135deg,#16a34a,#22c55e,#4ade80);
+}
+
+.project-icon{
+    background:linear-gradient(135deg,#166534,#22c55e);
+    box-shadow:0 8px 20px rgba(34,197,94,.30);
+}
+
+.project-buttons a:first-child{
+    background:#22c55e;
+    color:#020b07;
+}
+.project-buttons a:last-child{
+    background:transparent;
+    border:2px solid #22c55e;
+    color:#4ade80;
+}
+.project-buttons a:first-child:hover{
+    background:#16a34a;
+    color:white;
+}
+.project-buttons a:last-child:hover{
+    background:#22c55e;
+    color:#020b07;
+}
+
+.contact-box i{
+    background:#22c55e;
+    color:#020b07;
+}
+
+.contact-social a:hover{
+    background:#22c55e;
+    color:#020b07;
+}
+
+#topBtn{
+    background:#22c55e;
+    color:#020b07;
+    box-shadow:0 8px 20px rgba(34,197,94,.30);
+}
+#topBtn:hover{
+    background:#16a34a;
+    color:white;
+}
+
+body.light-mode .project-card h3{color:#22c55e;}
+body.light-mode .tech-stack span{color:#22c55e;}
